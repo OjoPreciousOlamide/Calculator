@@ -7,8 +7,45 @@
 
 </head>
 <body>
-    <script src="script.js">
-        
+    VALUE 1: <input type="text" id="value1" />
+    <br> 
+    VALUE 2: <input type="text" id="value2" />
+    <br> 
+    RESULT: <input type="text" id="result" /> <br> <br>
+
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="division()">/</button>
+    <button onclick="multiplication()">*</button>
+
+    <script>
+        function addition() {
+            let v1 = Number(value1.value);
+            let v2 = Number(value2.value);
+            let r = v1 + v2;
+            result.value = r;
+        }
+
+        function subtraction() {
+            let v1 = Number(value1.value);
+            let v2 = Number(value2.value);
+            let r = v1 - v2;
+            result.value = r;
+        }
+
+        function division() {
+            let v1 = Number(value1.value);
+            let v2 = Number(value2.value);
+            let r = v1 / v2;
+            result.value = r;
+        }
+
+        function multiplication() {
+            let v1 = Number(value1.value);
+            let v2 = Number(value2.value);
+            let r = v1 * v2;
+            result.value = r;
+        }
     </script>
 </body>
 </html>
